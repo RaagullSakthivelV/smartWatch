@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    color: white;
+  }
+  
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #2445eb;
+    color: #000000;
+  }
+  
+  .right {
+    right: 0;
+    background-color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .watch-unlock{
+    height:240px;
+    width:180px;
+    background-color:black;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watch-home {
+    height:240px;
+    width:180px;
+    background-color:black;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .time-weather {
+    line-height: 10%;
+  }
+
+  .top-time {
+    position: absolute;
+    top:0;
+  }
+
+  .footer{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom:7%;
+  }
+
+  .timer-control {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom:23%;
+  }
+  
+  #indexpage {
+    display: block;
+  }
+
+  #homepage {
+    display: none;
+  }
+
+  #timerpage {
+    display: none;
+  }
+
+  #messagepage {
+    display: none;
+  }
+
+  #musicpage{
+    display: none;
+  }
+  
+  .table {
+    background-color: white;
+    color: #000000;
+    border-radius: 15px 15px 15px 15px; 
+    border-top-left-radius: 0;
+    padding-bottom: 15px;
+}
+
+td{
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+    padding:9px;
+}
+
+.table-div {
+    width: 90%;
+    height:60%;
+}
+
+.main-timer {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sub-timer{
+    padding: 0px;
+    margin-bottom: 20px;
+    margin: 0px;
+}
+
+.top-time {
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+   
+<div class="split left">
+  <div class="centered">
+    <h1>Smart Watch</h1>
+  </div>
+</div>
+
+<div class="split right" id="indexpage">
+  <div class="centered">
+    <div class="watch-unlock">
+        <h1 onclick="myFunction('indexpage','homepage')" class="unlock">Unlock</h1>
+        <!-- onclick="loadContent('homepage.html')" -->
+    </div>
+    <div id="content"></div>
+  </div>
+</div>
+
+<div class="split right" id="homepage">
+  <div class="centered">
+    <div class="watch-home">
+        <p onclick="myFunction('homepage','indexpage')" class="top-time">17:15</p>
+        <div class="time-weather">
+            <h1>17:15</h1>
+            <p>Friday <i class="fa fa-cloud" style="font-size:24px"></i></p>
+
+            <!-- <i class="fa fa-sun-o" style="font-size:24px"></i> -->
+        </div>
+        <div class="footer">
+            <i onclick="myFunction('homepage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
+            <i onclick="myFunction('homepage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
+            <i onclick="myFunction('homepage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="split right" id="timerpage">
+  <div class="centered">
+    <div class="watch-home">
+        <p onclick="myFunction('homepage')" class="top-time">17:15</p>
+        <div>
+          <h1 class="main-timer">00:00:00</h1>
+          <h3 class="sub-timer">00:00:00</h3>
+        </div>
+        <div class="timer-control">
+            <i class="fa fa-play-circle" style="font-size:24px"></i>
+            <!-- <i class="fa fa-play-circle" style="font-size:24px"></i> -->
+            <i class="fa fa-pause-circle-o" style="font-size:24px"></i>
+            <i class="fa fa-stop-circle" style="font-size:24px"></i>
+        </div>
+        <div class="footer">
+            <i onclick="myFunction('timerpage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
+            <i onclick="myFunction('timerpage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
+            <i onclick="myFunction('timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="split right" id="messagepage">
+  <div class="centered">
+    <div class="watch-home">
+      <p onclick="myFunction('homepage')" class="top-time">17:15</p>
+      <div class="table-div">
+        <table class="table">
+          <tr>
+            <td>Shipment done ID #673</td>
+          </tr>
+        
+          <tr>
+            <td>Recharge Successful!</td>
+          </tr>
+          <tr>
+            <td>Amount credited:Rs.236</td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer">
+        <i onclick="myFunction('messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
+        <i onclick="myFunction('messagepage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('messagepage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="split right" id="musicpage">
+  <div class="centered">
+    <div class="watch-home">
+      <p onclick="myFunction('homepage')" class="top-time">17:15</p>
+      
+      <div class="footer">
+        <i onclick="myFunction('musicpage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
+        <i onclick="myFunction('musicpage')" class="fa fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('musicpage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html> 
