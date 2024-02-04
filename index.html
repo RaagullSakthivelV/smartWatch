@@ -25,6 +25,7 @@
   </div>
 </div>
 
+
 <div class="split right" id="homepage">
   <img class="image" src="assets/watch-png.png">
   <div class="centered">
@@ -35,6 +36,19 @@
             <div class="weather">
               <p id="home-day">Saturday</p><i id="sun" class="fa-solid fa-sun" style="font-size:15px"></i><i id="cloud" class="fa-solid fa-cloud-rain" style="font-size:15px"></i><p class="temp"></p>
             </div>
+
+<div class="split right" id="homepage datetime">
+  <div class="centered">
+    <div class="watch-home">
+        <p onclick="myFunction('homepage','indexpage')" class="top-time" id="">17:15</p>
+        <div class="time-weather">
+          <span id="datetime"></span>
+            <script>updateDateTime()</script>
+            <!-- <p>Friday <i class="fa fa-cloud" style="font-size:24px"></i></p> -->
+            <p> <i class="fa fa-cloud" style="font-size:24px"></i></p>
+
+            <!-- <i class="fa fa-sun-o" style="font-size:24px"></i> -->
+
         </div>
         <div class="footer">
             <i onclick="myFunction('homepage','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
@@ -51,14 +65,27 @@
     <div class="watch-home">
         <p onclick="myFunction('timerpage','homepage')" class="top-time" id="top-timer-time">17:15</p>
         <div>
-          <h1 class="main-timer">00:00:00</h1>
-          <h3 class="sub-timer">00:00:00</h3>
+          <!-- <h1 class="main-timer">00:00:00</h1>
+          <h3 class="sub-timer">00:00:00</h3> -->
+          <div class="stopwatch">
+           <h1 class="main-timer"><div class="display">00:00:00</div></h1> 
+           <h3 class="sub-timer">00:00:00</h3> 
+           
+          </div>
         </div>
         <div class="timer-control">
+
             <i class="fa fa-repeat reset" id="reset-id" style="font-size:24px"></i>
             <i class="fa-solid fa-play start" id="start-id" style="font-size:24px"></i>
             <i class="fa fa-pause pause" id="pause-id" style="font-size:24px"></i>
             <i class="fa-solid fa-stop stop" id="stop-id" style="font-size:24px"></i>
+
+           
+            <i class="fa fa-play-circle start" style="font-size:24px"></i> 
+            <!-- <i class="fa fa-play-circle" style="font-size:24px"></i> -->
+            <i class="fa fa-pause-circle-o stop" style="font-size:24px"></i>
+          <i class="fa fa-stop-circle reset" style="font-size:24px"></i>
+
         </div>
         <div class="footer">
             <i onclick="myFunction('timerpage','messagepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
