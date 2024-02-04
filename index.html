@@ -4,8 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+<script src="https://kit.fontawesome.com/f101e8ae4a.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
@@ -16,6 +15,7 @@
 </div>
 
 <div class="split right" id="indexpage">
+  <img class="image" src="assets/watch-png.png">
   <div class="centered">
     <div class="watch-unlock">
         <h1 onclick="myFunction('indexpage','homepage')" class="unlock">Unlock</h1>
@@ -26,42 +26,44 @@
 </div>
 
 <div class="split right" id="homepage">
+  <img class="image" src="assets/watch-png.png">
   <div class="centered">
     <div class="watch-home">
-        <p onclick="myFunction('homepage','indexpage')" class="top-time">17:15</p>
+        <p class="top-time" id="top-home-time">17:15</p>
         <div class="time-weather">
-            <h1>17:15</h1>
-            <p>Friday <i class="fa fa-cloud" style="font-size:24px"></i></p>
-
-            <!-- <i class="fa fa-sun-o" style="font-size:24px"></i> -->
+            <h1 id="home-time">17:15</h1>
+            <div class="weather">
+              <p id="home-day">Saturday</p><i id="sun" class="fa-solid fa-sun" style="font-size:15px"></i><i id="cloud" class="fa-solid fa-cloud-rain" style="font-size:15px"></i><p class="temp"></p>
+            </div>
         </div>
         <div class="footer">
-            <i onclick="myFunction('homepage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
-            <i onclick="myFunction('homepage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
-            <i onclick="myFunction('homepage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+            <i onclick="myFunction('homepage','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+            <i onclick="myFunction('homepage','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+            <i onclick="myFunction('homepage','timerpage')"class="far fa-clock" style="font-size:24px"></i>
         </div>
     </div>
   </div>
 </div>
 
 <div class="split right" id="timerpage">
+  <img class="image" src="assets/watch-png.png">
   <div class="centered">
     <div class="watch-home">
-        <p onclick="myFunction('homepage')" class="top-time">17:15</p>
+        <p onclick="myFunction('timerpage','homepage')" class="top-time" id="top-timer-time">17:15</p>
         <div>
           <h1 class="main-timer">00:00:00</h1>
           <h3 class="sub-timer">00:00:00</h3>
         </div>
         <div class="timer-control">
-            <i class="fa fa-play-circle" style="font-size:24px"></i>
-            <!-- <i class="fa fa-play-circle" style="font-size:24px"></i> -->
-            <i class="fa fa-pause-circle-o" style="font-size:24px"></i>
-            <i class="fa fa-stop-circle" style="font-size:24px"></i>
+            <i class="fa fa-repeat reset" id="reset-id" style="font-size:24px"></i>
+            <i class="fa-solid fa-play start" id="start-id" style="font-size:24px"></i>
+            <i class="fa fa-pause pause" id="pause-id" style="font-size:24px"></i>
+            <i class="fa-solid fa-stop stop" id="stop-id" style="font-size:24px"></i>
         </div>
         <div class="footer">
-            <i onclick="myFunction('timerpage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
-            <i onclick="myFunction('timerpage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
-            <i onclick="myFunction('timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+            <i onclick="myFunction('timerpage','messagepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
+            <i onclick="myFunction('timerpage','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+            <i onclick="myFunction('timerpage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
         </div>
     </div>
   </div>
@@ -69,47 +71,116 @@
 
 
 <div class="split right" id="messagepage">
+  <img class="image" src="assets/watch-png.png">
   <div class="centered">
     <div class="watch-home">
-      <p onclick="myFunction('homepage')" class="top-time">17:15</p>
+      <p onclick="myFunction('messagepage','homepage')" class="top-time" id="top-msg-time">17:15</p>
       <div class="table-div">
         <table class="table">
           <tr>
-            <td>Shipment done ID #673</td>
+            <td onclick="myFunction('messagepage','ship-msg')" class="chat">Shipment done ID #673</td>
           </tr>
         
           <tr>
-            <td>Recharge Successful!</td>
+            <td onclick="myFunction('messagepage','recharge-msg')" class="chat">Recharge Successful!</td>
           </tr>
           <tr>
-            <td>Amount credited:Rs.236</td>
+            <td onclick="myFunction('messagepage','bank-msg')" class="chat">Amount credited:Rs.236</td>
           </tr>
         </table>
       </div>
       <div class="footer">
-        <i onclick="myFunction('messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
-        <i onclick="myFunction('messagepage','musicpage')" class="fa fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('messagepage','messagepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
+        <i onclick="myFunction('messagepage','musicpage')" class="fas fa-music" style="font-size:24px"></i>
         <i onclick="myFunction('messagepage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
     </div>
     </div>
   </div>
 </div>
 
-<div class="split right" id="musicpage">
+<div class="split right" id="ship-msg">
+  <img class="image" src="assets/watch-png.png">
   <div class="centered">
     <div class="watch-home">
-      <p onclick="myFunction('homepage')" class="top-time">17:15</p>
-      
+      <p onclick="myFunction('ship-msg','homepage')" class="top-time" id="top-shop-time">17:15</p>
+      <div class="table-div">
+        <p>
+          Tracking details will be provided shortly. Thank you for choosing our services!
+        </p>
+      </div>
       <div class="footer">
-        <i onclick="myFunction('musicpage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
-        <i onclick="myFunction('musicpage')" class="fa fa-music" style="font-size:24px"></i>
-        <i onclick="myFunction('musicpage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+        <i onclick="myFunction('ship-msg','homepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
+        <i onclick="myFunction('ship-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('ship-msg','timerpage')" class="fa fa-clock-o" style="font-size:24px"></i>
     </div>
     </div>
   </div>
 </div>
 
+<div class="split right" id="recharge-msg">
+  <img class="image" src="assets/watch-png.png">
+  <div class="centered">
+    <div class="watch-home">
+      <p onclick="myFunction('recharge-msg','homepage')" class="top-time" id="top-recharge-time">17:15</p>
+      <div class="table-div">
+        <p>
+          Your account has been successfully topped up, and your new balance is now available.
+        </p>
+      </div>
+      <div class="footer">
+        <i onclick="myFunction('recharge-msg','homepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+        <i onclick="myFunction('recharge-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('recharge-msg','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+    </div>
+    </div>
+  </div>
+</div>
 
-<script src="app.js"></script>
+<div class="split right" id="bank-msg">
+  <img class="image" src="assets/watch-png.png">
+  <div class="centered">
+    <div class="watch-home">
+      <p onclick="myFunction('bank-msg','homepage')" class="top-time" id="top-bank-time">17:15</p>
+      <div class="table-div">
+        <p>
+          Your account has been credited with Rs.236. Thank you for your transaction!
+        </p>
+      </div>
+      <div class="footer">
+        <i onclick="myFunction('bank-msg','homepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+        <i onclick="myFunction('bank-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('bank-msg','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="split right" id="musicpage">
+  <img class="image" src="assets/watch-png.png">
+  <div class="centered">
+    <div class="watch-home">
+      <p onclick="myFunction('musicpage','homepage')" class="top-time" id="top-music-time">17:15</p>
+      
+      <iframe id="myiframe" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0"  allow="encrypted-media" scrolling="yes"></iframe>
+    
+      <div class="footer">
+        <i onclick="myFunction('musicpage','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+        <i onclick="myFunction('musicpage','musicpage')" class="fas fa-music" style="font-size:24px"></i>
+        <i onclick="myFunction('musicpage','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="app.js">
+  function timeNow() {
+  const d = new Date();
+  document.getElementById("home-time").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
 </body>
 </html> 
