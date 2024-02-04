@@ -25,13 +25,15 @@
   </div>
 </div>
 
-<div class="split right" id="homepage">
+<div class="split right" id="homepage datetime">
   <div class="centered">
     <div class="watch-home">
-        <p onclick="myFunction('homepage','indexpage')" class="top-time">17:15</p>
+        <p onclick="myFunction('homepage','indexpage')" class="top-time" id="">17:15</p>
         <div class="time-weather">
-            <h1>17:15</h1>
-            <p>Friday <i class="fa fa-cloud" style="font-size:24px"></i></p>
+          <span id="datetime"></span>
+            <script>updateDateTime()</script>
+            <!-- <p>Friday <i class="fa fa-cloud" style="font-size:24px"></i></p> -->
+            <p> <i class="fa fa-cloud" style="font-size:24px"></i></p>
 
             <!-- <i class="fa fa-sun-o" style="font-size:24px"></i> -->
         </div>
@@ -49,14 +51,20 @@
     <div class="watch-home">
         <p onclick="myFunction('homepage')" class="top-time">17:15</p>
         <div>
-          <h1 class="main-timer">00:00:00</h1>
-          <h3 class="sub-timer">00:00:00</h3>
+          <!-- <h1 class="main-timer">00:00:00</h1>
+          <h3 class="sub-timer">00:00:00</h3> -->
+          <div class="stopwatch">
+           <h1 class="main-timer"><div class="display">00:00:00</div></h1> 
+           <h3 class="sub-timer">00:00:00</h3> 
+           
+          </div>
         </div>
         <div class="timer-control">
-            <i class="fa fa-play-circle" style="font-size:24px"></i>
+           
+            <i class="fa fa-play-circle start" style="font-size:24px"></i> 
             <!-- <i class="fa fa-play-circle" style="font-size:24px"></i> -->
-            <i class="fa fa-pause-circle-o" style="font-size:24px"></i>
-            <i class="fa fa-stop-circle" style="font-size:24px"></i>
+            <i class="fa fa-pause-circle-o stop" style="font-size:24px"></i>
+          <i class="fa fa-stop-circle reset" style="font-size:24px"></i>
         </div>
         <div class="footer">
             <i onclick="myFunction('timerpage','messagepage')" class="fa fa-send-o" style="font-size:24px"></i>
