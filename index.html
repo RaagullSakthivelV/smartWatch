@@ -33,7 +33,10 @@
         <div class="time-weather">
             <h1 id="home-time">17:15</h1>
             <div class="weather">
-              <p id="home-day">Saturday</p><i id="sun" class="fa-solid fa-sun" style="font-size:15px"></i><i id="cloud" class="fa-solid fa-cloud-rain" style="font-size:15px"></i><p class="temp"></p>
+              <p id="home-day">Saturday</p>
+              <i id="sun" class="fa-solid fa-sun" style="font-size:15px"></i>
+              <i id="cloud" class="fa-solid fa-cloud-rain" style="font-size:15px"></i>
+              <!-- <img id="weather-icon" style="font-size:15px" src="" > -->
             </div>
         </div>
         <div class="footer">
@@ -50,7 +53,7 @@
   <div class="centered">
     <div class="watch-home">
         <p onclick="myFunction('timerpage','homepage')" class="top-time" id="top-timer-time">17:15</p>
-        <div>
+        <div class="timers-div">
           <h1 class="main-timer">00:00:00</h1>
           <h3 class="sub-timer">00:00:00</h3>
         </div>
@@ -109,7 +112,7 @@
         </p>
       </div>
       <div class="footer">
-        <i onclick="myFunction('ship-msg','homepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
+        <i onclick="myFunction('ship-msg','messagepage')" class="far fa-comment-dots"  style="font-size:24px"></i>
         <i onclick="myFunction('ship-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
         <i onclick="myFunction('ship-msg','timerpage')" class="fa fa-clock-o" style="font-size:24px"></i>
     </div>
@@ -128,7 +131,7 @@
         </p>
       </div>
       <div class="footer">
-        <i onclick="myFunction('recharge-msg','homepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+        <i onclick="myFunction('recharge-msg','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
         <i onclick="myFunction('recharge-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
         <i onclick="myFunction('recharge-msg','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
     </div>
@@ -147,7 +150,7 @@
         </p>
       </div>
       <div class="footer">
-        <i onclick="myFunction('bank-msg','homepage')" class="far fa-comment-dots" style="font-size:24px"></i>
+        <i onclick="myFunction('bank-msg','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
         <i onclick="myFunction('bank-msg','musicpage')" class="fas fa-music" style="font-size:24px"></i>
         <i onclick="myFunction('bank-msg','timerpage')"class="fa fa-clock-o" style="font-size:24px"></i>
     </div>
@@ -160,8 +163,9 @@
   <div class="centered">
     <div class="watch-home">
       <p onclick="myFunction('musicpage','homepage')" class="top-time" id="top-music-time">17:15</p>
-      
-      <iframe id="myiframe" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" frameborder="0"  allow="encrypted-media" scrolling="yes"></iframe>
+      <div class="iframe-div">
+        <iframe id="myiframe" class="spotify" src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3?theme=0" frameborder="0"  allow="encrypted-media"></iframe>
+      </div>
     
       <div class="footer">
         <i onclick="myFunction('musicpage','messagepage')" class="far fa-comment-dots" style="font-size:24px"></i>
