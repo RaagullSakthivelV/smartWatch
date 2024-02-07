@@ -14,6 +14,7 @@ function myFunction(currDivId, nextDivId) {
       messagePage.style.display = "block";
     }
   }
+
   if (nextDivId == 'homepage') {
     console.log('time clicked', currDivId, nextDivId);
     current_div.style.display = "none";
@@ -146,11 +147,11 @@ function updateWeather() {
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + 'Coimbatore' + '&appid=aba59a5f4ff4bfda4d88aead84bee5da')
     .then(response => response.json())
     .then(data => {
-      var tempValue = data['main']['temp'];
-      // var weather = data['weather'][0]['icon'];
-      // var weather_icon = document.getElementById('weather-icon');
-      // weather_icon.src="https://openweathermap.org/img/wn/"+weather+"@2x.png";
-      // console.log("weather is",weather);
+      // var tempValue = data['main']['temp'];
+      var weather = data['weather'][0]['icon'];
+      var weather_icon = document.getElementById('weather-icon');
+      weather_icon.src="https://openweathermap.org/img/wn/"+weather+"@2x.png";
+      console.log("weather is",weather);
       if ((tempValue - 273.15) > 25) {
         document.getElementById('sun').style.display = "block"
         document.getElementById('cloud').style.display = "none"

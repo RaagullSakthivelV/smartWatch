@@ -3,20 +3,21 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     background-color: blue;
     color: orange;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .split{
-    background-color: white;
+    background-color: blue;
   }
   .left{
     color: yellow;
   }
-}
+} */
 
 .split {
   height: 100%;
@@ -251,19 +252,21 @@ iframe {
 
 .iframe-div{
   overflow-y: scroll;
-  margin-top: 7%;
+  margin-top: 7.5%;
   scrollbar-width:none;
   scrollbar-color: black;
   border-radius: 15px;
 }
 
-
-
-/* #weather-icon{
+#weather-icon{
   size: .2em;
   height: 4em;
   width: 4em;
   color: white;
-} */
+}
 
-
+.music-footer{
+  background-color: black;
+  padding-top: 6px;
+  padding-right: 2px;
+}
