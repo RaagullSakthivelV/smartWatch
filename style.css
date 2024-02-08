@@ -3,21 +3,50 @@ body {
   color: white;
 }
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-    color: orange;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .split{
-    background-color: blue;
+@media only screen and (max-width: 600px) {
+  .right{
+    left:0;
   }
   .left{
-    color: yellow;
+    right: 0;
+    width: 0%;
   }
-} */
+  #indexpage {
+    width: 100%;
+  }
+  
+  #homepage {
+    width: 100%;
+  }
+  
+  #timerpage {
+    width: 100%;
+  }
+  
+  #messagepage {
+    width: 100%;
+  }
+  
+  #musicpage {
+    width: 100%;
+  }
+
+  #ship-msg{
+    width: 100%;
+  }
+
+  #recharge-msg{
+    width: 100%;
+  }
+  
+  #bank-msg{
+    width: 100%;
+  }
+  
+}
+
+
+
 
 .split {
   height: 100%;
